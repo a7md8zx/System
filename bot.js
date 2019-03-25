@@ -33,6 +33,20 @@ console.log('Dev Narox by Jackeo')
 });
  
 //حط الاكواد تحت ↓↓↓
+
+client.on('message', message => {
+if(!message.channel.guild) return;
+if (message.content.startsWith("+ping")) {
+    message.channel.sendMessage(`Pong ! `${Date.now() - message.createdTimestamp} ms`:watch:`);
+    }
+});
+
+
+
+
+
+
+
  
  
  
